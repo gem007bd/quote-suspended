@@ -83,12 +83,7 @@ let quotes =  {
       { "name":"Jim Rohn","quote": "Time is more value than money. You can get more money, but you cannot get more time."}
       ]
   };
-  var randomQuote = quotes.time[Math.floor(Math.random()*quotes.time.length)]
-  console.log(randomQuote);
-// var quoteName = quotes.time.random().map(function(qname,quote) {
-//   return qname.name;
-//
-// });
-// console.log(quoteName);
 
-document.querySelector('.quote-message').textContent = randomQuote.quote;
+  var randomQuote = quotes.time[Math.floor(Math.random()*quotes.time.length)]
+  document.querySelector('.quote-message').textContent = randomQuote.quote;
+  document.querySelector('.name-message').textContent = randomQuote.name;

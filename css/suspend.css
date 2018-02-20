@@ -42,9 +42,27 @@ body {
   font-size: 12px;
 }
 
-.suspend-message , .quote-message{
+.suspend-message{
   text-align: center;
   margin-top: 25px;
   font-size: 18px;
   color: #555;
+}
+.quote-message{
+  text-align: center;
+  margin-top: 25px;
+  font-size: 20px;
+  font-style: italic;
+  color: #555;
+}
+.name-message{
+  margin-top: 5px;
+  margin-right:40%;
+  text-align: right;
+  font-size: 14px;
+}
+.quote-section{
+  margin-top: 25px;
+  padding: 20px;
+  background: #eee;
 }
