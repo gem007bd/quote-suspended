@@ -83,7 +83,25 @@ let quotes =  {
       { "name":"Jim Rohn","quote": "Time is more value than money. You can get more money, but you cannot get more time."}
       ]
   };
-
+let commingDates = {
+  "upCommingDate" : [
+      {
+        'date' : '15-August-2018',
+        'eventType' : 'localEvent',
+        'eventName' : 'Assumption (Mariä Himmelfahrt, closures in Bavaria and Saarland)'
+      },
+      {
+        'date' : '15 t0 19 August-2018',
+        'eventType' : 'localEvent',
+        'eventName' : 'Weindorf wine festival, Rothenburg ob der Tauber'
+      },
+      {
+        'date' : '15 t0 19 August-2018',
+        'eventType' : 'calendarEvent',
+        'eventName' : 'Weindorf wine festival, Rothenburg ob der Tauber'
+      }
+  ]
+};
   var randomQuote = quotes.time[Math.floor(Math.random()*quotes.time.length)]
   document.querySelector('.quote-message').textContent = randomQuote.quote;
   document.querySelector('.name-message').textContent = randomQuote.name;
