@@ -91,17 +91,22 @@ let commingDates = {
         'eventName' : 'Assumption (Mariä Himmelfahrt, closures in Bavaria and Saarland)'
       },
       {
-        'date' : '15 t0 19 August-2018',
+        'date' : '15 to 19 August-2018',
         'eventType' : 'localEvent',
         'eventName' : 'Weindorf wine festival, Rothenburg ob der Tauber'
       },
       {
-        'date' : '15 t0 19 August-2018',
+        'date' : '25 August-2018',
         'eventType' : 'calendarEvent',
-        'eventName' : 'Weindorf wine festival, Rothenburg ob der Tauber'
+        'eventName' : 'Doctor Appoinment'
       }
   ]
 };
-  var randomQuote = quotes.time[Math.floor(Math.random()*quotes.time.length)]
-  document.querySelector('.quote-message').textContent = randomQuote.quote;
-  document.querySelector('.name-message').textContent = randomQuote.name;
+  var randomQuote = quotes.time[Math.floor(Math.random()*quotes.time.length)];
+  //document.querySelector('.quote-message').textContent = randomQuote.quote;
+//  document.querySelector('.name-message').textContent = randomQuote.name;
+
+// for upcoming events
+var randomUpcommigEvents = commingDates.upCommingDate[Math.floor(Math.random()*commingDates.upCommingDate.length)];
+document.querySelector('.event-date').textContent = randomUpcommigEvents.date;
+document.querySelector('.event-message').textContent = randomUpcommigEvents.eventName;

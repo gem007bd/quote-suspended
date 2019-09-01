@@ -48,20 +48,20 @@ body {
   font-size: 18px;
   color: #555;
 }
-.quote-message{
+.quote-message , .event-date{
   text-align: center;
   margin-top: 25px;
   font-size: 20px;
   font-style: italic;
   color: #555;
 }
-.name-message{
+.name-message , .event-message{
   margin-top: 5px;
   margin-right:40%;
   text-align: right;
   font-size: 14px;
 }
-.quote-section{
+.quote-section , .event-section {
   margin-top: 25px;
   padding: 20px;
   background: #eee;
